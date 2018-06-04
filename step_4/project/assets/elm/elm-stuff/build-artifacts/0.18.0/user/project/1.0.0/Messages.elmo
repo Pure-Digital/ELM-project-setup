@@ -1,0 +1,9 @@
+var _user$project$Messages$Model1Msg = function (a) {
+	return {ctor: 'Model1Msg', _0: a};
+};
+var _user$project$Messages$UrlChange = function (a) {
+	return {ctor: 'UrlChange', _0: a};
+};
+var _user$project$Messages$ChangeRoute = function (a) {
+	return {ctor: 'ChangeRoute', _0: a};
+};

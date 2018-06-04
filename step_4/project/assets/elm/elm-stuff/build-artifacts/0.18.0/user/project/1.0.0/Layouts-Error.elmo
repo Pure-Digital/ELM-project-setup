@@ -1,0 +1,10 @@
+var _user$project$Layouts_Error$error = function (model) {
+	return A2(
+		_elm_lang$html$Html$h1,
+		{ctor: '[]'},
+		{
+			ctor: '::',
+			_0: _elm_lang$html$Html$text('ERROR 404'),
+			_1: {ctor: '[]'}
+		});
+};

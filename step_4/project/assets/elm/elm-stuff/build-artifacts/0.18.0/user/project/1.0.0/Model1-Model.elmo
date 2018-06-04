@@ -1,0 +1,4 @@
+var _user$project$Model1_Model$initModel = {route: _user$project$Model1_Routing$Page1};
+var _user$project$Model1_Model$Model = function (a) {
+	return {route: a};
+};

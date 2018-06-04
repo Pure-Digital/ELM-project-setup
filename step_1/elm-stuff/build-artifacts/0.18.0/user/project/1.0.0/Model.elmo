@@ -1,0 +1,7 @@
+var _user$project$Model$initModel = A2(
+	_elm_lang$core$Platform_Cmd_ops['!'],
+	{noop: true},
+	{ctor: '[]'});
+var _user$project$Model$Model = function (a) {
+	return {noop: a};
+};

@@ -1,0 +1,45 @@
+var _user$project$Routing$toPath = function (route) {
+	var _p0 = route;
+	switch (_p0.ctor) {
+		case 'Model1':
+			return '/model-1';
+		case 'Home':
+			return '/';
+		default:
+			return '/error-404';
+	}
+};
+var _user$project$Routing$Error = {ctor: 'Error'};
+var _user$project$Routing$Home = {ctor: 'Home'};
+var _user$project$Routing$Model1 = {ctor: 'Model1'};
+var _user$project$Routing$matcher = _evancz$url_parser$UrlParser$oneOf(
+	{
+		ctor: '::',
+		_0: A2(
+			_evancz$url_parser$UrlParser$map,
+			_user$project$Routing$Home,
+			_evancz$url_parser$UrlParser$s('')),
+		_1: {
+			ctor: '::',
+			_0: A2(
+				_evancz$url_parser$UrlParser$map,
+				_user$project$Routing$Model1,
+				_evancz$url_parser$UrlParser$s('model-1')),
+			_1: {
+				ctor: '::',
+				_0: A2(
+					_evancz$url_parser$UrlParser$map,
+					_user$project$Routing$Error,
+					_evancz$url_parser$UrlParser$s('error-404')),
+				_1: {ctor: '[]'}
+			}
+		}
+	});
+var _user$project$Routing$parser = function (location) {
+	var _p1 = A2(_evancz$url_parser$UrlParser$parsePath, _user$project$Routing$matcher, location);
+	if (_p1.ctor === 'Just') {
+		return _p1._0;
+	} else {
+		return _user$project$Routing$Error;
+	}
+};

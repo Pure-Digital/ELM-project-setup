@@ -1,0 +1,8 @@
+var _user$project$Model1_View$view = function (model) {
+	var _p0 = model.route;
+	if (_p0.ctor === 'Page1') {
+		return _user$project$Model1_Views_Page1$page1(model);
+	} else {
+		return _user$project$Model1_Views_Page2$page2(model);
+	}
+};

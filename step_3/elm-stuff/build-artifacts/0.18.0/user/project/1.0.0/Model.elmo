@@ -1,0 +1,8 @@
+var _user$project$Model$initModel = A2(
+	_elm_lang$core$Platform_Cmd_ops['!'],
+	{route: _user$project$Routing$Home, model1: _user$project$Model1_Model$initModel},
+	{ctor: '[]'});
+var _user$project$Model$Model = F2(
+	function (a, b) {
+		return {route: a, model1: b};
+	});

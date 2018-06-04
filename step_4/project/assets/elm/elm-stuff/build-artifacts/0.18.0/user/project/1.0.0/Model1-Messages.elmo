@@ -1,0 +1,3 @@
+var _user$project$Model1_Messages$ChangeRoute = function (a) {
+	return {ctor: 'ChangeRoute', _0: a};
+};

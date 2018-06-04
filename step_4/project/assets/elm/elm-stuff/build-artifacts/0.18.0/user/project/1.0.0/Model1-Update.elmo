@@ -1,0 +1,10 @@
+var _user$project$Model1_Update$update = F2(
+	function (msg, model) {
+		var _p0 = msg;
+		return A2(
+			_elm_lang$core$Platform_Cmd_ops['!'],
+			_elm_lang$core$Native_Utils.update(
+				model,
+				{route: _p0._0}),
+			{ctor: '[]'});
+	});

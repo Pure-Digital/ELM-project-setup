@@ -1,0 +1,26 @@
+var _user$project$Update$update = F2(
+	function (msg, model) {
+		var _p0 = msg;
+		if (_p0.ctor === 'ChangeRoute') {
+			return A2(
+				_elm_lang$core$Platform_Cmd_ops['!'],
+				_elm_lang$core$Native_Utils.update(
+					model,
+					{route: _p0._0}),
+				{ctor: '[]'});
+		} else {
+			var _p1 = A2(_user$project$Model1_Update$update, _p0._0, model.model1);
+			var newModel1 = _p1._0;
+			var cmdMsg1 = _p1._1;
+			return A2(
+				_elm_lang$core$Platform_Cmd_ops['!'],
+				_elm_lang$core$Native_Utils.update(
+					model,
+					{model1: newModel1}),
+				{
+					ctor: '::',
+					_0: A2(_elm_lang$core$Platform_Cmd$map, _user$project$Messages$Model1Msg, cmdMsg1),
+					_1: {ctor: '[]'}
+				});
+		}
+	});

@@ -1,0 +1,11 @@
+var _user$project$Model$initialModel = F2(
+	function (flags, route) {
+		return {route: route, model1: _user$project$Model1_Model$initModel, flags: flags};
+	});
+var _user$project$Model$Model = F3(
+	function (a, b, c) {
+		return {route: a, model1: b, flags: c};
+	});
+var _user$project$Model$Flags = function (a) {
+	return {socketUrl: a};
+};
